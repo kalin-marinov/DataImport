@@ -1,0 +1,35 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "buildOptions": {
+    "copyToOutput": [
+      "CSV/Resources/People.csv",
+      "CSV/Resources/People_NoHeaders.csv",
+      "Excel/Resources/People.xlsx"
+    ]
+},
+
+  "testRunner": "mstest",
+
+  "dependencies": {
+    "dotnet-test-mstest": "1.1.2-preview",
+    "DataImport": "1.0.0-*",
+    "MSTest.TestFramework": "1.0.7-preview"
+  },
+
+  "frameworks": {
+    "netcoreapp1.1": {
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win8"
+      ],
+
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.1.0",
+          "type": "platform"
+        }
+      }
+    }
+  }
+}
